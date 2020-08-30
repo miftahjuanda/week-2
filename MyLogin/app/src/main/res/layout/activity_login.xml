@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    android:padding="@dimen/margin_10"
+    tools:context=".view.login.LoginActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/logo_login"
+        android:layout_width="@dimen/margin_110"
+        android:layout_height="@dimen/margin_110"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/ic_account_45" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="@dimen/margin5"
+        android:layout_marginEnd="25dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1.50"
+            android:background="@color/fontColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:gravity="center"
+            android:text="@string/sign_in"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text18"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1.50"
+            android:background="@color/fontColor" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin28"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="@dimen/margin14"
+        android:weightSum="2">
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edt_corner"
+            android:drawableStart="@drawable/ic_account_circle_24"
+            android:drawablePadding="@dimen/margin5"
+            android:hint="@string/ketik_username_anda"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/margin_10"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin14"
+            android:background="@drawable/edt_corner"
+            android:drawableStart="@drawable/ic_lock_24"
+            android:drawablePadding="@dimen/margin5"
+            android:hint="@string/ketik_password_anda"
+            android:inputType="textPassword"
+            android:padding="@dimen/margin_10"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/tv_lupa_sandi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="@string/lupa_sandi"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin28"
+            android:layout_marginEnd="@dimen/margin28"
+            android:layout_marginTop="@dimen/margin_20"
+            android:background="@drawable/btn_corner"
+            android:text="@string/masuk"
+            android:textColor="@color/fontColor"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:text="@string/tidak_terdaftar"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tv_buat_akun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:text="@string/buat_akun"
+                android:textColor="@color/yellow" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

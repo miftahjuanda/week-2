@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Mylogin</string>
+    <string name="sign_in">Sign In</string>
+    <string name="ketik_username_anda">Ketik Username Anda</string>
+    <string name="ketik_password_anda">Ketik Password Anda</string>
+    <string name="lupa_sandi">Lupa sandi ?</string>
+    <string name="masuk">Login</string>
+    <string name="tidak_terdaftar">Tidak terdaftar ?</string>
+    <string name="buat_akun">Buat Akun</string>
+    <string name="nama">Nama</string>
+    <string name="spesifikasi">Gorden, 1 pasang, biru/merah garis-garis</string>
+    <string name="harga">Rp. 99999999</string>
+    <string name="close">Close</string>
+</resources>

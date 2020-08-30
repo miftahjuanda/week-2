@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyCalculator</string>
+    <string name="input_angka">Input Angka</string>
+    <string name="plus">+</string>
+    <string name="min">-</string>
+    <string name="multi">*</string>
+    <string name="div">/</string>
+    <string name="hasil">Hasil</string>
+    <string name="error_input">Input Angka Anda</string>
+</resources>

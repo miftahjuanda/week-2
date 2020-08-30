@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_10"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/edt_number1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/edt_corner"
+        android:ems="13"
+        android:hint="@string/input_angka"
+        android:inputType="number|numberDecimal"
+        android:padding="@dimen/margin_10"
+        android:importantForAutofill="no" />
+
+
+    <EditText
+        android:id="@+id/edt_number2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@drawable/edt_corner"
+        android:ems="13"
+        android:hint="@string/input_angka"
+        android:inputType="number|numberDecimal"
+        android:padding="@dimen/margin_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_tambah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_5"
+            android:layout_marginEnd="@dimen/margin_5"
+            android:layout_weight="1"
+            android:background="@drawable/btn_corner"
+            android:text="@string/plus"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_20" />
+
+        <Button
+            android:id="@+id/btn_kurang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_5"
+            android:layout_marginEnd="@dimen/margin_5"
+            android:layout_weight="1"
+            android:background="@drawable/btn_corner"
+            android:text="@string/min"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_20" />
+
+        <Button
+            android:id="@+id/btn_kali"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_5"
+            android:layout_marginEnd="@dimen/margin_5"
+            android:layout_weight="1"
+            android:background="@drawable/btn_corner"
+            android:text="@string/multi"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_20" />
+
+        <Button
+            android:id="@+id/btn_bagi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_5"
+            android:layout_marginEnd="@dimen/margin_5"
+            android:layout_weight="1"
+            android:background="@drawable/btn_corner"
+            android:text="@string/div"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_20" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/edt_Hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@drawable/edt_corner"
+        android:ems="13"
+        android:gravity="center"
+        android:hint="@string/hasil"
+        android:padding="@dimen/margin_10"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+</LinearLayout>
